@@ -2,7 +2,7 @@
 using namespace std;
 struct s
 {
-  // c is used  for storing the character at the location
+  // c is used  for storing the character at the location (either '#' or '.')
   char c;
   // p is used for storing the status of the location (either on or off)
   bool p;
@@ -25,6 +25,7 @@ int main()
 			a[i][j].p=1;
 			else
 			a[i][j].p=0;
+			
 			a[i][j].k=0;
 		}
 	}
