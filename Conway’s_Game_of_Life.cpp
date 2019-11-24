@@ -45,14 +45,16 @@ int main()
 				a[i-1][j+1].k++;
 			}
 		}
-	}	for(i=1;i<=n;i++)
+	}	
+	
+/*	for(i=1;i<=n;i++)
 	{
 		for(j=1;j<=m;j++)
 		{
 		cout<<a[i][j].k<<" ";	
 		}
 		cout<<endl;
-	}
+	}     */
 
 	for(i=1;i<=n;i++)
 	{
