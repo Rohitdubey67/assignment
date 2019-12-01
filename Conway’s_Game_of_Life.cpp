@@ -152,7 +152,7 @@ int main()
 		cout<<endl;
 		/* . unit testing .*/
 		
-		//unit test -1: if at any location count of neighbors is less then zero or more than report an error...
+		//unit test -1: if at any location count of neighbors is less then zero or more than 8 report an error...
 		if(a[i][j].k<0&&a[i][j].k>8)
 		cout<<"Error found";
 		
