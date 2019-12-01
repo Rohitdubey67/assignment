@@ -138,7 +138,7 @@ int main()
 		for(i=1;i<=n;i++)
 		{
 		    for(j=1;j<=m;j++)
-		    cout<<a[i][j].c;
+		    cout<<a[i][j].put_c();
 		    cout<<endl;
 		}
 		cout<<endl;
@@ -146,25 +146,27 @@ int main()
 		for(i=1;i<=n;i++)
 		{
 		    for(j=1;j<=m;j++)
-		    cout<<b[i][j].c;
+		    cout<<b[i][j].put_c();
 		    cout<<endl;
 		}
 		cout<<endl;
 		/* . unit testing .*/
 		
-		//unit test -1: if at any location count of neighbors is less then zero or more than 8 report an error...
+		//unit test -1: if at any location count of neighbours is less then zero or more than 8 report an error...
 		if(a[i][j].k<0&&a[i][j].k>8)
 		cout<<"Error found";
 		
-		//unit test -2:
+		//unit test -2: if at any location count of neighbours is zero and in next gen matrix if this place is occupied 
+		//then report an error...
 		if(a[i][j].k==0&&b[i][j].c=='#')
 		cout<<"Error found";
 		
-		//unit test -3:
+		//unit test -3:if at any location count of neighbours is one and in next gen matrix if this place is occupied 
+		//then report an error...
 		if(a[i][j].k==1&&b[i][j].c=='#')
 		cout<<"Error found";
 		
-		//unit test -4:
+		//unit test -4:if at any location count of neighbours is two and in next gen matrix if this place's value is not //same as value current gen matrix then report an error...
 		if(a[i][j].k==2&&a[i][j].c!=b[i][j].c)
 		cout<<"Error foound";
 		
